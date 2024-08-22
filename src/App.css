@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: #1c232e;
 }
 
 body {
@@ -16,8 +17,7 @@ body {
 }
 
 .wrapper {
-  border: 1px solid black;
-  width: 90%;
+  width: 60%;
   max-width: 1536px;
   margin-inline: auto;
   position: relative;
