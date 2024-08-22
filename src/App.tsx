@@ -58,6 +58,19 @@ function App() {
         </div>
       </nav>
 
+      <header>
+        <div className="header-photo"></div>
+        <div className="header-texts">
+          <div className="name">
+            My name is <span>Christian</span>
+          </div>
+          <div className="description">
+            I am a passionate web developer with a keen eye for detail and a commitment to creating seamless user experiences. My journey in web development began with a curiosity about how websites work and has since evolved into a full-fledged career where I design, build, and optimize responsive websites and applications.
+          </div>
+          <button>Download CV</button>
+        </div>
+      </header>
+
       <div className="widget">
         <div className="widget-tabs">
           <input type="radio" name="tabs" id="overview" checked={checked} onClick={() => setChecked(true)}/>
@@ -94,6 +107,24 @@ function App() {
               eleifend sem in metus consectetur suspendisse. In per aptent efficitur volutpat vulputate.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="characteristics">
+        <div className="auto-blur" style={{ marginLeft: '350px' }}>
+          <h1>GOAL-ORIENTED</h1>
+        </div>
+        <div className="auto-blur" style={{ marginLeft: '450px' }}>
+          <h1>EFFICIENT</h1>
+        </div>
+        <div className="auto-blur" style={{ marginLeft: '350px' }}>
+          <h1>HARD WORKER</h1>
+        </div>
+        <div className="auto-blur" style={{ marginLeft: '550px' }}>
+          <h1>Lorem Ipsum</h1>
+        </div>
+        <div className="auto-blur" style={{ marginLeft: '250px' }}>
+          <h1>Lorem Ipsum</h1>
         </div>
       </div>
 
