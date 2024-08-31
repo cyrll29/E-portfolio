@@ -245,11 +245,14 @@ a {
   width: 80vw;
   max-width: 1000px;
   height: auto;
-  background-color: white;
+  background-color: #1e3f66;
   margin-inline: auto;
   margin: 2rem auto;
   border-radius: 10px;
   padding: 10px;
+
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
 }
 
 .widget-tabs {
@@ -314,6 +317,8 @@ a {
   padding: 1rem;
   height: 500px;
   overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 [class ^="widget-tabs-content-"] {
@@ -359,7 +364,19 @@ a {
   }
 }
 
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .per-experience {
+  color: #faf9f6;
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
@@ -368,6 +385,8 @@ a {
 
   justify-content: flex-end;
   align-items: flex-start;
+
+  border-radius: 20px;
 }
 
 .job-year, .job-details {
@@ -382,7 +401,7 @@ a {
   width: 70%;
   padding: 10px;
 
-  border-left: solid 5px gray;
+  border-left: solid 3px gray;
 }
 
 .job-year {
@@ -423,11 +442,83 @@ a {
 }
 
 .per-skills {
-  background-color: lightgray;
+  background-color: #1c232e;
   padding: 5px 15px 5px 15px;
   border-radius: 20px;
 
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+.university-modal {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+
+  margin-top: 2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.per-school {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 33vw;
+  max-width: 400px;
+  height: 400px;
+  padding: 30px;
+
+  border-radius: 10px;
+
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.per-school:hover {
+  transform: scale(1.1);
+  border: 5px solid lightblue;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.school-program, .school-details, .school-years {
+  text-align: center;
+}
+
+.school-program {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.school-name {
+  font-size: 15px;
+}
+
+.school-location {
+  font-size: 12px;
+}
+
+.school-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.ue {
+  background-image: url('./assets/ue_logo.jpg');
+  background-size: cover;
+}
+
+.pup {
+  background-image: url('./assets/pup-logo.png');
+  background-size: cover;
 }

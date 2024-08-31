@@ -28,8 +28,6 @@ function App() {
   }, [])
 
   useEffect(() => {
-    console.log(scrollData)
-
     if(scrollData.y > scrollData.lastY && scrollData.y > 99) {
       setShowNav('nav-bar hide-nav-bar');
     } 
@@ -74,7 +72,7 @@ function App() {
       <div className="widget">
         <div className="widget-tabs">
           <input type="radio" name="tabs" id="overview" checked={checked} onClick={() => setChecked(true)}/>
-          <label htmlFor="overview">Overview</label>
+          <label htmlFor="overview">Education</label>
 
           <input type="radio" name="tabs" id="experience" onClick={() => setChecked(false)}/>
           <label htmlFor="experience">Experience</label>
@@ -85,11 +83,27 @@ function App() {
 
         <div className="widget-tabs-content">
           <div className="widget-tabs-content-1">
-            <h1>Overview</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis consequat eros fames ligula dictumst imperdiet. 
-              Enim luctus a massa euismod netus. Congue mattis in maecenas curabitur cursus neque aptent augue duis. Nisl feugiat 
-              eleifend sem in metus consectetur suspendisse. In per aptent efficitur volutpat vulputate.
-            </p>
+            <div className="university-modal">
+              <div className="per-school">
+                <div className="school-logo ue"></div>
+                <div className="school-details">
+                  <div className="school-name">University of the East - Caloocan</div>
+                  <div className="school-location">Sangandaan, Caloocan</div>
+                </div>
+                <div className="school-program">Science, Technology, Engineering, Mathematics</div>
+                <div className="school-years">2018 - 2020</div>
+              </div>
+
+              <div className="per-school">
+                <div className="school-logo pup"></div>
+                <div className="school-details">
+                  <div className="school-name">Polytechnic University of the Philippines - Manila</div>
+                  <div className="school-location">Sta. Mesa, Manila</div>
+                </div>
+                <div className="school-program">BS in Computer Engineering, Major in System Development</div>
+                <div className="school-years">2020 - 2024</div>
+              </div>
+            </div>
           </div>
 
           <div className="widget-tabs-content-2">
@@ -237,7 +251,7 @@ function App() {
       </div>
 
       <div className="characteristics">
-        <div className="auto-blur" style={{ marginLeft: '350px' }}>
+        <div className="auto-blur" style={{ marginLeft: '270px' }}>
           <h1>GOAL-ORIENTED</h1>
         </div>
         <div className="auto-blur" style={{ marginLeft: '450px' }}>
