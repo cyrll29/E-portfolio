@@ -93,11 +93,137 @@ function App() {
           </div>
 
           <div className="widget-tabs-content-2">
-            <h1>Experience</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis consequat eros fames ligula dictumst imperdiet. 
-              Enim luctus a massa euismod netus. Congue mattis in maecenas curabitur cursus neque aptent augue duis. Nisl feugiat 
-              eleifend sem in metus consectetur suspendisse. In per aptent efficitur volutpat vulputate.
-            </p>
+            <div className="per-experience">
+              <div className="job-year">
+                AUG - OCT 2022
+              </div>
+              <div className="job-details">
+                <div className="job-title">
+                  WSAP&nbsp;&nbsp;&nbsp;&nbsp; | <span>&nbsp;&nbsp;&nbsp;&nbsp;Web Developer Intern</span>
+                </div>
+
+                <div className="job-description">
+                  Accompanied and piloted the Web Development Team in creating the company's website, from front-end to back-end. In charge of ensuring websites look good and function properly.
+                  Assisted the technical support head in managing events and webinars hosted by the company.
+                </div>
+
+                <div className="job-skills">
+                  <div className="per-skills">
+                    PHP
+                  </div>
+
+                  <div className="per-skills">
+                    HTML5
+                  </div>
+
+                  <div className="per-skills">
+                    CSS3
+                  </div>
+
+                  <div className="per-skills">
+                    Javascript
+                  </div>
+
+                  <div className="per-skills">
+                    MySQL
+                  </div>
+
+                  <div className="per-skills">
+                    WordPress
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="per-experience">
+              <div className="job-year">
+                AUG - NOV 2023
+              </div>
+              <div className="job-details">
+                <div className="job-title">
+                  LHK SOLUTIONS INC.&nbsp;&nbsp;&nbsp;&nbsp; | <span>&nbsp;&nbsp;&nbsp;&nbsp;Web Developer Intern</span>
+                </div>
+
+                <div className="job-description">
+                  Assisted and contributed to the production of the front-end side of a Warehouse Management System using VueJS. Started and developed the landing page of the company's 
+                  administration management system using ReactJS. Studied back-end programming such as NodeJS, Java, and its framework, Spring. Migrated an existing database to a new 
+                  database for the In-house project.
+                </div>
+
+                <div className="job-skills">
+                  <div className="per-skills">
+                    HTML5
+                  </div>
+
+                  <div className="per-skills">
+                    CSS3
+                  </div>
+
+                  <div className="per-skills">
+                    Javascript
+                  </div>
+
+                  <div className="per-skills">
+                    VueJS
+                  </div>
+
+                  <div className="per-skills">
+                    ReactJS
+                  </div>
+
+                  <div className="per-skills">
+                    NodeJS
+                  </div>
+
+                  <div className="per-skills">
+                    PostgreSQL
+                  </div>
+
+                  <div className="per-skills">
+                    Java
+                  </div>
+
+                  <div className="per-skills">
+                    Spring
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="per-experience">
+              <div className="job-year">
+                NOV 2023 - JUN 2024
+              </div>
+              <div className="job-details">
+                <div className="job-title">
+                  ECE CONTACT CENTERS&nbsp;&nbsp;&nbsp;&nbsp; | <span>&nbsp;&nbsp;&nbsp;&nbsp;Customer Service Representative</span>
+                </div>
+                <div className="job-description">
+                  Handle customer accounts related to banking and financial applications. Identify customer concerns and provide necessary troubleshooting steps based on regulated response.
+                </div>
+                <div className="job-skills">
+                  <div className="per-skills">
+                    Zendesk
+                  </div>
+                  
+                  <div className="per-skills">
+                    Zoho
+                  </div>
+
+                  <div className="per-skills">
+                    Slack
+                  </div>
+
+                  <div className="per-skills">
+                    Communication Skills
+                  </div>
+
+                  <div className="per-skills">
+                    Time Management
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="widget-tabs-content-3">
