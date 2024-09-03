@@ -1,13 +1,24 @@
 import { useState, useEffect } from 'react';
 import './App.css'
-import { FaHtml5, FaCss3Alt, FaReact, FaNode, FaPhp, FaJava, FaLinkedin, FaGithubSquare } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoVue } from "react-icons/io5";
+import { FaRegCopyright, FaHtml5, FaCss3Alt, FaReact, FaNode, FaPhp, FaJava, FaLinkedin, FaGithubSquare, FaFacebookSquare, FaChevronUp } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoVue, IoShareOutline } from "react-icons/io5";
+import kyusitrip_logo from "./assets/LOGO2.png";
+import kyusitrip_logo_2 from "./assets/kt_logo.png";
+import resume from "./assets/resume.pdf";
+import google_drive_logo from "./assets/Google_Drive_logo.png";
 
 function App() {
   const [scrollData, setScrollData] = useState({
     y:0,
     lastY: 0
   })
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   const [showNav, setShowNav] = useState('')
 
@@ -47,6 +58,9 @@ function App() {
         </div>
 
         <div className='nav-bar-logos'>
+          <a href='https://www.facebook.com/christian.cyrille.y' target='_blank'>
+            <FaFacebookSquare />
+          </a>
           <a href='https://www.linkedin.com/in/christiancyrilleyvillasenor/' target='_blank'>
             <FaLinkedin />
           </a>
@@ -55,6 +69,15 @@ function App() {
           </a>
         </div>
       </nav>
+
+      <div className="landing-section">
+        <div className="developer-name">Christian Cyrille Y. Villaseñor</div>
+        <div className="developer-slogan">Cyrll &#8211; Crafting Code, Shaping the Web.</div>
+      </div>
+
+      <div className="header-title">
+        <h1>ABOUT ME</h1>
+      </div>
 
       <header>
         <div className="header-photo"></div>
@@ -65,7 +88,9 @@ function App() {
           <div className="description">
             I am a passionate web developer with a keen eye for detail and a commitment to creating seamless user experiences. My journey in web development began with a curiosity about how websites work and has since evolved into a full-fledged career where I design, build, and optimize responsive websites and applications.
           </div>
-          <button>Download CV</button>
+          <a href={resume} download="Resume - Villaseñor">
+            <button>Download CV</button>
+          </a>
         </div>
       </header>
 
@@ -76,9 +101,6 @@ function App() {
 
           <input type="radio" name="tabs" id="experience" onClick={() => setChecked(false)}/>
           <label htmlFor="experience">Experience</label>
-
-          <input type="radio" name="tabs" id="awards" onClick={() => setChecked(false)}/>
-          <label htmlFor="awards">Awards</label>
         </div>
 
         <div className="widget-tabs-content">
@@ -87,7 +109,7 @@ function App() {
               <div className="per-school">
                 <div className="school-logo ue"></div>
                 <div className="school-details">
-                  <div className="school-name">University of the East - Caloocan</div>
+                  <div className="school-name">University of the East  &#8211; Caloocan</div>
                   <div className="school-location">Sangandaan, Caloocan</div>
                 </div>
                 <div className="school-program">Science, Technology, Engineering, Mathematics</div>
@@ -97,7 +119,7 @@ function App() {
               <div className="per-school">
                 <div className="school-logo pup"></div>
                 <div className="school-details">
-                  <div className="school-name">Polytechnic University of the Philippines - Manila</div>
+                  <div className="school-name">Polytechnic University of the Philippines  &#8211; Manila</div>
                   <div className="school-location">Sta. Mesa, Manila</div>
                 </div>
                 <div className="school-program">BS in Computer Engineering, Major in System Development</div>
@@ -239,14 +261,6 @@ function App() {
               </div>
             </div>
           </div>
-
-          <div className="widget-tabs-content-3">
-            <h1>Awards</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis consequat eros fames ligula dictumst imperdiet. 
-              Enim luctus a massa euismod netus. Congue mattis in maecenas curabitur cursus neque aptent augue duis. Nisl feugiat 
-              eleifend sem in metus consectetur suspendisse. In per aptent efficitur volutpat vulputate.
-            </p>
-          </div>
         </div>
       </div>
 
@@ -261,46 +275,251 @@ function App() {
           <h1>HARD WORKER</h1>
         </div>
         <div className="auto-blur" style={{ marginLeft: '550px' }}>
-          <h1>Lorem Ipsum</h1>
+          <h1>LOGICAL THINKER</h1>
         </div>
-        <div className="auto-blur" style={{ marginLeft: '250px' }}>
-          <h1>Lorem Ipsum</h1>
+        <div className="auto-blur" style={{ marginLeft: '750px' }}>
+          <h1>PRECISE</h1>
+        </div>
+      </div>
+
+      <div className="header-title">
+        <h1>TECH STACK</h1>
+      </div>
+
+      <div className='wrapper'>
+        <div className="item item-1">
+          <FaHtml5 color='#e34c26' size={100}/>
+        </div>
+
+        <div className="item item-2">
+          <FaCss3Alt color='#264de4' size={100}/>
+        </div>
+
+        <div className="item item-3">
+          <IoLogoJavascript color='#f0db4f' size={100}/>
+        </div>
+
+        <div className="item item-4">
+          <IoLogoVue color='#42b883' size={100}/>
+        </div>
+
+        <div className="item item-5">
+          <FaReact color='#88dded' size={100}/>
+        </div>
+
+        <div className="item item-6">
+          <FaNode color='#215732' size={100}/>
+        </div>
+
+        <div className="item item-7">
+          <FaPhp color='#8993be' size={100}/>
+        </div>
+
+        <div className="item item-8">
+          <FaJava color='#5382a1' size={100}/>
+        </div>
+      </div>
+
+      <div className="header-title">
+        <h1>NOTABLE PROJECT</h1>
+      </div>
+
+      <div className="projects">
+        <div className="kyusitrip">
+          <div className="kyusitrip-item-1">
+
+          </div>
+
+          <div className="kyusitrip-item-2">
+            <div className="kyusitrip-logo">
+              <img src={kyusitrip_logo} alt="KyusiTrip Logo" />
+            </div>
+          </div>
+
+          <div className="kyusitrip-item-3">
+            <div className="kyusitrip-title">
+              <h1><span>Kyusi</span>Trip</h1>
+            </div>
+          </div>
+
+          <div className="kyusitrip-item-4">
+
+          </div>
+
+          <div className="kyusitrip-item-5">
+
+          </div>
+
+          <div className="kyusitrip-item-6">
+            
+          </div>
+
+          <div className="kyusitrip-item-7">
+            <div className="kt-logo-2">
+              <img src={kyusitrip_logo_2} />
+            </div>
+            <div className="kyusitrip-title-7">
+              <h1><span>Kyusi</span>Trip</h1>
+            </div>
+          </div>
+
+          <div className="kyusitrip-item-8">
+            <div>Thesis</div>
+            <div>KyusiTrip</div>
+            <div>A kiosk and a mobile application for public transportation information, planner, and navigation</div>
+          </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1wHBvjXeA0ShY-JrZN8Otq0Z5bj-NgBVr?usp=sharing" target='_blank'>
+          <div className='kyusitrip-drive'>
+            <img src={google_drive_logo} alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div className="header-title">
+        <h1>OTHER PROJECTS</h1>
+      </div>
+
+      <div className="other-projects">
+        <div className="main-container">
+          <div className="other-project">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://drive.google.com/drive/folders/1GtKk7fKq5HFbaFue-9jP6aokhX1Tj9Aa?usp=drive_link" target='_blank'><IoShareOutline size={30} /></a>
+                <a href="https://github.com/cyrll29/Game-Development-Project-CMPE40032" target='_blank'><FaGithubSquare size={30} /></a>
+              </div>
+              <div className="other-project-title">Honor's Curse</div>
+              <div className="other-project-description">A top down role-playing game made from C# as a final project in our subject</div>
+              <div className="other-project-stack">C# &nbsp;&nbsp; Unity &nbsp;&nbsp; Aseprite</div>
+            </div>
+          </div>
+
+          <div className="other-project project-2">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://github.com/cyrll29/Web-Development-Project-CMPE40062" target='_blank'><FaGithubSquare size={30} /></a>
+              </div>
+              <div className="other-project-title">Sample E-commerce</div>
+              <div className="other-project-description">A sample of e-commerce website as a requirement for our web development subject</div>
+              <div className="other-project-stack">HTML5 &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Javascript</div>
+            </div>
+          </div>
+
+          <div className="other-project project-3">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="http://yusongroupofcompanies.com" target='_blank'><IoShareOutline size={30} /></a>
+              </div>
+              <div className="other-project-title">YGC</div>
+              <div className="other-project-description">Maintained and improved the landing page for Yuson's Group of Companies</div>
+              <div className="other-project-stack">HTML5 &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Javascript &nbsp;&nbsp; PHP &nbsp;&nbsp; MySQL</div>
+            </div>
+          </div>
+
+          <div className="other-project project-4">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://tjyuson.com" target='_blank'><IoShareOutline size={30} /></a>
+              </div>
+              <div className="other-project-title">TJ Yuson E-Portfolio</div>
+              <div className="other-project-description">Maintained and improved the e-portfolio of TJ Yuson or the CEO of YGC</div>
+              <div className="other-project-stack">HTML5 &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Javascript &nbsp;&nbsp; PHP &nbsp;&nbsp; MySQL</div>
+            </div>
+          </div>
+
+          <div className="other-project project-5">
+            <div className="project-1">
+              <div className="other-project-links">
+               -
+              </div>
+              <div className="other-project-title">Seorin WMS</div>
+              <div className="other-project-description">Developed a warehouse management system based from the clients needs. This includes functions such as calculating stocks.</div>
+              <div className="other-project-stack">Javascript &nbsp;&nbsp; NodeJS &nbsp;&nbsp; VueJS &nbsp;&nbsp; Sourcetree</div>
+            </div>
+          </div>
+
+          <div className="other-project project-6">
+            <div className="project-1">
+              <div className="other-project-links">
+               -
+              </div>
+              <div className="other-project-title">LHK Admin Page</div>
+              <div className="other-project-description">Created the admin page or dashboard for the company as in-house project.</div>
+              <div className="other-project-stack">Javascript &nbsp;&nbsp; Java &nbsp;&nbsp; ReactJS &nbsp;&nbsp; PostgreSQL</div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className='wrapper'>
         <div className="item item-1">
-          <FaHtml5 color='#e34c26' size={80}/>
+          Available for work
         </div>
 
         <div className="item item-2">
-          <FaCss3Alt color='#264de4' size={80}/>
+          Based in Quezon City
         </div>
 
         <div className="item item-3">
-          <IoLogoJavascript color='#f0db4f' size={80}/>
+          Available for work
         </div>
 
         <div className="item item-4">
-          <IoLogoVue color='#42b883' size={80}/>
+          Based in Quezon City
         </div>
 
         <div className="item item-5">
-          <FaReact color='#88dded' size={80}/>
+          Available for work
         </div>
 
         <div className="item item-6">
-          <FaNode color='#215732' size={80}/>
+          Based in Quezon City
         </div>
 
         <div className="item item-7">
-          <FaPhp color='#8993be' size={80}/>
+          Available for work
         </div>
 
         <div className="item item-8">
-          <FaJava color='#5382a1' size={80}/>
+          Based in Quezon City
         </div>
       </div>
+
+      <footer>
+        <div className='footer-top'>
+          <div className="copyright">
+            <FaRegCopyright size={30} color='#faf9f6'/>
+            <div>2024</div>
+          </div>
+          <div className='back-to-top'>
+            BACK TO TOP
+            <button onClick={scrollToTop}>
+              <FaChevronUp/>
+            </button>
+          </div>
+        </div>
+        <div className='footer-middle'>
+          <div className='footer-question'>INTERESTED TO WORK WITH ME?</div>
+          <div className='footer-slogan'><p>EMAIL ME</p></div>
+          <div className='footer-email'>cvillasenior@gmail.com</div>
+        </div>
+        <div className='footer-bottom'>
+          <div className="footer-links">
+            <a href='https://www.facebook.com/christian.cyrille.y' target='_blank'>
+              <FaFacebookSquare size={70}/>
+            </a>
+            <a href='https://www.linkedin.com/in/christiancyrilleyvillasenor/' target='_blank'>
+              <FaLinkedin size={70}/>
+            </a>
+            <a href='https://github.com/cyrll29' target='_blank'>
+              <FaGithubSquare size={70}/>
+            </a>
+          </div>
+          <div className="footer-creator">
+            Designed and Developed by <span>&nbsp; Christian Cyrille Y. Villaseñor</span>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
