@@ -1022,3 +1022,9 @@ footer {
 .footer-creator span {
   font-weight: 500;
 }
+
+.kyusitrip-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}

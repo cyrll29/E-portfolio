@@ -6,6 +6,7 @@ import kyusitrip_logo from "./assets/LOGO2.png";
 import kyusitrip_logo_2 from "./assets/kt_logo.png";
 import resume from "./assets/resume.pdf";
 import google_drive_logo from "./assets/Google_Drive_logo.png";
+import github_logo from "./assets/github_logo.png";
 
 function App() {
   const [scrollData, setScrollData] = useState({
@@ -369,11 +370,18 @@ function App() {
             <div>A kiosk and a mobile application for public transportation information, planner, and navigation</div>
           </div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1wHBvjXeA0ShY-JrZN8Otq0Z5bj-NgBVr?usp=sharing" target='_blank'>
-          <div className='kyusitrip-drive'>
-            <img src={google_drive_logo} alt="" />
-          </div>
-        </a>
+        <div className="kyusitrip-links">
+          <a href="https://drive.google.com/drive/folders/1wHBvjXeA0ShY-JrZN8Otq0Z5bj-NgBVr?usp=sharing" target='_blank'>
+            <div className='kyusitrip-drive'>
+              <img src={google_drive_logo} alt="" />
+            </div>
+          </a>
+          <a href="https://github.com/cyrll29/route-wise" target='_blank'>
+            <div className='kyusitrip-drive'>
+              <img src={github_logo} alt="" />
+            </div>
+          </a>
+        </div>
       </div>
 
       <div className="header-title">
