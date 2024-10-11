@@ -456,6 +456,18 @@ function App() {
               <div className="other-project-stack">Javascript &nbsp;&nbsp; Java &nbsp;&nbsp; ReactJS &nbsp;&nbsp; PostgreSQL</div>
             </div>
           </div>
+
+          <div className="other-project project-7">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://3-d-e-commerce-website.vercel.app" target='_blank'><IoShareOutline size={30} /></a>
+                <a href="https://github.com/cyrll29/3D-E-commerce-Website" target='_blank'><FaGithubSquare size={30} /></a>
+              </div>
+              <div className="other-project-title">iPhone 15 Pro Sample Website</div>
+              <div className="other-project-description">A front-end website showcasing Apple's iPhone 15 Pro model and features</div>
+              <div className="other-project-stack">HTML5 &nbsp;&nbsp; Tailwind CSS &nbsp;&nbsp; Javascript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Three.js</div>
+            </div>
+          </div>
         </div>
       </div>
 
