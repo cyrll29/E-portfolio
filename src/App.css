@@ -261,7 +261,7 @@ header {
   color: #1e3f66;
 }
 
-a:active, a:visited {
+a, a:active, a:visited {
   color: #1e3f66;
 }
 
@@ -823,7 +823,7 @@ a {
 
 .other-projects {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   display: flex;
 
   justify-content: center;
