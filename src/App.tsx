@@ -321,7 +321,7 @@ function App() {
         </div>
       </div>
 
-      <div className="header-title">
+      <div className="header-title" style={{ backgroundColor: '#1e3f66'}}>
         <h1>NOTABLE PROJECT</h1>
       </div>
 
@@ -397,8 +397,44 @@ function App() {
                 <a href="https://github.com/cyrll29/Game-Development-Project-CMPE40032" target='_blank'><FaGithubSquare size={30} /></a>
               </div>
               <div className="other-project-title">Honor's Curse</div>
-              <div className="other-project-description">A top down role-playing game made from C# as a final project in our subject</div>
+              <div className="other-project-description">A top down role-playing game made from C# as a final project in our subject.</div>
               <div className="other-project-stack">C# &nbsp;&nbsp; Unity &nbsp;&nbsp; Aseprite</div>
+            </div>
+          </div>
+
+          <div className="other-project project-6">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://startup-directory-six.vercel.app" target='_blank'><IoShareOutline size={30} /></a>
+                <a href="https://github.com/cyrll29/sample-startup" target='_blank'><FaGithubSquare size={30} /></a>
+              </div>
+              <div className="other-project-title">YC Directory</div>
+              <div className="other-project-description">Created a directory for startup pitch using NextJS and Sanity w/ GitHub OAuth.</div>
+              <div className="other-project-stack">Typescript &nbsp;&nbsp; NextAuth &nbsp;&nbsp; NextJS &nbsp;&nbsp; Sanity</div>
+            </div>
+          </div>
+
+          <div className="other-project project-6">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://cy-dryve.vercel.app" target='_blank'><IoShareOutline size={30} /></a>
+                <a href="https://github.com/cyrll29/gdrive-duplicate" target='_blank'><FaGithubSquare size={30} /></a>
+              </div>
+              <div className="other-project-title">Cy Dryve</div>
+              <div className="other-project-description">A Google Drive clone with a full functionality of a storage or drive using NextJS and Appwrite.</div>
+              <div className="other-project-stack">Typescript &nbsp;&nbsp; Appwrite &nbsp;&nbsp; NextJS &nbsp;&nbsp; Tailwind</div>
+            </div>
+          </div>
+
+          <div className="other-project project-7">
+            <div className="project-1">
+              <div className="other-project-links">
+                <a href="https://3-d-e-commerce-website.vercel.app" target='_blank'><IoShareOutline size={30} /></a>
+                <a href="https://github.com/cyrll29/3D-E-commerce-Website" target='_blank'><FaGithubSquare size={30} /></a>
+              </div>
+              <div className="other-project-title">iPhone 15 Pro Sample Website</div>
+              <div className="other-project-description">A front-end website showcasing Apple's iPhone 15 Pro model and features.</div>
+              <div className="other-project-stack">Tailwind CSS &nbsp;&nbsp; Typescript &nbsp;&nbsp; NextJS &nbsp;&nbsp; Three.js</div>
             </div>
           </div>
 
@@ -408,7 +444,7 @@ function App() {
                 <a href="https://github.com/cyrll29/Web-Development-Project-CMPE40062" target='_blank'><FaGithubSquare size={30} /></a>
               </div>
               <div className="other-project-title">Sample E-commerce</div>
-              <div className="other-project-description">A sample of e-commerce website as a requirement for our web development subject</div>
+              <div className="other-project-description">A sample of e-commerce website as a requirement for our web development subject.</div>
               <div className="other-project-stack">HTML5 &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Javascript</div>
             </div>
           </div>
@@ -419,7 +455,7 @@ function App() {
                 <a href="http://yusongroupofcompanies.com" target='_blank'><IoShareOutline size={30} /></a>
               </div>
               <div className="other-project-title">YGC</div>
-              <div className="other-project-description">Maintained and improved the landing page for Yuson's Group of Companies</div>
+              <div className="other-project-description">Maintained and improved the landing page for Yuson's Group of Companies.</div>
               <div className="other-project-stack">HTML5 &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Javascript &nbsp;&nbsp; PHP &nbsp;&nbsp; MySQL</div>
             </div>
           </div>
@@ -430,7 +466,7 @@ function App() {
                 <a href="https://tjyuson.com" target='_blank'><IoShareOutline size={30} /></a>
               </div>
               <div className="other-project-title">TJ Yuson E-Portfolio</div>
-              <div className="other-project-description">Maintained and improved the e-portfolio of TJ Yuson or the CEO of YGC</div>
+              <div className="other-project-description">Maintained and improved the e-portfolio of TJ Yuson or the CEO of YGC.</div>
               <div className="other-project-stack">HTML5 &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Javascript &nbsp;&nbsp; PHP &nbsp;&nbsp; MySQL</div>
             </div>
           </div>
@@ -454,30 +490,6 @@ function App() {
               <div className="other-project-title">LHK Admin Page</div>
               <div className="other-project-description">Created the admin page or dashboard for the company as in-house project.</div>
               <div className="other-project-stack">Javascript &nbsp;&nbsp; Java &nbsp;&nbsp; ReactJS &nbsp;&nbsp; PostgreSQL</div>
-            </div>
-          </div>
-
-          <div className="other-project project-7">
-            <div className="project-1">
-              <div className="other-project-links">
-                <a href="https://3-d-e-commerce-website.vercel.app" target='_blank'><IoShareOutline size={30} /></a>
-                <a href="https://github.com/cyrll29/3D-E-commerce-Website" target='_blank'><FaGithubSquare size={30} /></a>
-              </div>
-              <div className="other-project-title">iPhone 15 Pro Sample Website</div>
-              <div className="other-project-description">A front-end website showcasing Apple's iPhone 15 Pro model and features</div>
-              <div className="other-project-stack">Tailwind CSS &nbsp;&nbsp; Typescript &nbsp;&nbsp; NextJS &nbsp;&nbsp; Three.js</div>
-            </div>
-          </div>
-          
-          <div className="other-project project-6">
-            <div className="project-1">
-              <div className="other-project-links">
-                <a href="https://startup-directory-six.vercel.app" target='_blank'><IoShareOutline size={30} /></a>
-                <a href="https://github.com/cyrll29/sample-startup" target='_blank'><FaGithubSquare size={30} /></a>
-              </div>
-              <div className="other-project-title">YC Directory</div>
-              <div className="other-project-description">Created a directory for startup pitch using NextJS and Sanity w/ GitHub OAuth</div>
-              <div className="other-project-stack">Typescript &nbsp;&nbsp; NextAuth &nbsp;&nbsp; NextJS &nbsp;&nbsp; Sanity</div>
             </div>
           </div>
 
